@@ -13,6 +13,10 @@
 .projects-container > h1 {
   color: var(--accent-color);
 }
+
+.tech-stack > h3 {
+  color: var(--accent-color);
+}
 .projects-container > .projects > .container {
   display: flex;
   align-items: center;

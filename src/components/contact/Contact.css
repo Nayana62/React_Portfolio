@@ -33,6 +33,12 @@ p {
   outline: none;
   margin: 10px 0;
   border: 2px solid black;
+  background: var(--input-background-color);
+  color: var(--input-text-color);
+}
+
+::-webkit-input-placeholder {
+  color: var(--input-text-color);
 }
 
 .contact-form button {

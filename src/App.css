@@ -6,6 +6,8 @@
   --navbar-color: rgb(255, 255, 255, 0.8);
   --navbar-links: rgb(51 65 85);
   --navbar-links-hover: rgba(87, 87, 87, 0.082);
+  --input-background-color: #fff;
+  --input-text-color: #7d7d7d;
 }
 
 [data-theme="dark"] {
@@ -16,6 +18,8 @@
   --navbar-color: rgb(0, 0, 0, 0.8);
   --navbar-links: #fff;
   --navbar-links-hover: rgba(255, 255, 255, 0.082);
+  --input-background-color: #7d7d7d;
+  --input-text-color: #fff;
 }
 
 body {
