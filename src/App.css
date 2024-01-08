@@ -28,7 +28,8 @@ body {
   background-color: var(--background-color);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
+  html,
   body {
     overflow-x: hidden;
   }

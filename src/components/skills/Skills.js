@@ -29,8 +29,7 @@ const Skills = () => {
               <img src={material} alt="material logo" />
               Material UI
             </li>
-          </div>
-          <div className="containers">
+
             <li>
               <img src={css} alt="css logo" />
               CSS
@@ -43,8 +42,6 @@ const Skills = () => {
               <img src={firebaseLogo} alt="react logo" />
               Firebase
             </li>
-          </div>
-          <div className="containers">
             <li>
               <img src={javascript} alt="javascript logo" /> Javascript
             </li>
