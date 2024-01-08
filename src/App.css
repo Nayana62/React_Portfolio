@@ -8,6 +8,7 @@
   --navbar-links-hover: rgba(87, 87, 87, 0.082);
   --input-background-color: #fff;
   --input-text-color: #7d7d7d;
+  --input-border-color: #000;
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --navbar-links-hover: rgba(255, 255, 255, 0.082);
   --input-background-color: #7d7d7d;
   --input-text-color: #fff;
+  --input-border-color: #7d7d7d;
 }
 
 body {
