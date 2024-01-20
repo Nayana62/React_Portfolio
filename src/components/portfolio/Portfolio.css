@@ -12,6 +12,7 @@
 
 .projects-container > h1 {
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 
 .tech-stack > h3 {
@@ -20,12 +21,12 @@
 .projects-container > .projects > .container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .projects-container > .projects > .container > img {
   width: 550px;
   height: 300px;
-  margin: 20px;
+  margin: 0 20px;
   border-radius: 20px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
@@ -36,7 +37,7 @@
   margin-top: -20px;
 }
 .projects-container > .projects > .container > .details > h2 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: var(--accent-color);
 }
 .projects-container > .projects > .container > .details > p {

@@ -20,6 +20,19 @@ const Skills = () => {
             <li>
               <img src={html} alt="html logo" /> Html
             </li>
+            <li>
+              <img src={css} alt="css logo" />
+              CSS
+            </li>
+
+            <li>
+              <img src={javascript} alt="javascript logo" /> Javascript
+            </li>
+
+            <li>
+              <img src={reactLogo} alt="react logo" />
+              React
+            </li>
 
             <li>
               <img src={TailwindCss} alt="Tailwind logo" />
@@ -31,22 +44,12 @@ const Skills = () => {
             </li>
 
             <li>
-              <img src={css} alt="css logo" />
-              CSS
-            </li>
-            <li>
-              <img src={reactLogo} alt="react logo" />
-              React
-            </li>
-            <li>
               <img src={firebaseLogo} alt="react logo" />
               Firebase
             </li>
+
             <li>
-              <img src={javascript} alt="javascript logo" /> Javascript
-            </li>
-            <li>
-              <img src={reduxLogo} alt="javascript logo" /> Redux
+              <img src={reduxLogo} alt="javascript logo" /> Redux-toolkit
             </li>
             <li>
               <BsGithub className="github" />

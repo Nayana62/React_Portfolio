@@ -104,7 +104,7 @@
   .navbar {
     padding: 25px;
     transition: all 0.3s ease-in-out;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .desktopIcon {
@@ -112,7 +112,7 @@
   }
   .links {
     background-color: var(--background-color);
-    position: absolute;
+    position: sticky;
     width: 60vw;
     height: 100vh;
     top: 0;

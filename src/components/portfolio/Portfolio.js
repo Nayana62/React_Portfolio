@@ -1,12 +1,11 @@
 import React from "react";
+import YoutubeClone from "../../assets/youtube_clone.png";
 import MovieSearchApp from "../../assets/Movie_search_app.png";
 import AmazonCloneApp from "../../assets/amazon_clone.png";
-import ReminderApp from "../../assets/reminder_app.png";
 import LinkedInCloneApp from "../../assets/LinkedIn_Clone.png";
 import ReactLogo from "../../assets/react.svg";
 import ReduxLogo from "../../assets/redux.png";
 import FirebaseLogo from "../../assets/firebase.png";
-import NextJSLogo from "../../assets/NextJsCircle.png";
 import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 import "./Portfolio.css";
 
@@ -16,6 +15,54 @@ const Portfolio = () => {
       <div className="projects-container">
         <h1>Portfolio</h1>
         <div className="projects">
+          <div className="container">
+            <div className="details">
+              <h2>Youtube Clone</h2>
+              <p>
+                I successfully developed a YouTube Clone project featuring a
+                user interface mirroring YouTube for familiarity and a fully
+                responsive design compatible with all devices. To enhance user
+                experience, I implemented Shimmer UI and integrated infinite
+                scrolling for seamless navigation. The optimized search feature
+                provides live API suggestions, debouncing for API call
+                management, and caching using Redux Toolkit. The project also
+                includes an N-level comment system similar to Reddit, a live
+                chat feature with API polling, and controlled chat size to
+                prevent freezing. Developed using REACT, Tailwind CSS,
+                redux-toolkit, react-router-dom, and the YouTube API.
+              </p>
+              <div className="tech-stack">
+                <h3>Tech Stack - </h3>
+                <div>
+                  <img src={ReactLogo} alt="react-logo" />
+                  <img src={ReduxLogo} alt="redux-logo" />
+                </div>
+              </div>
+              <div className="social-links">
+                <a
+                  href="https://github.com/Nayana62/youtube_clone"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                  <span>
+                    <BsGithub />
+                  </span>
+                </a>
+                <a
+                  href="https://youtube-clone-nayana62.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Preview
+                  <span className="arroup">
+                    <BsBoxArrowUpRight />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <img src={YoutubeClone} alt="" />
+          </div>
           <div className="container">
             <img src={MovieSearchApp} alt="" />
             <div className="details">
@@ -147,51 +194,6 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="container">
-            <div className="details">
-              <h2>Reminder App</h2>
-              <p>
-                Introducing the Reminder App built with Next.js, where
-                simplicity meets functionality. This user-friendly application
-                provides seamless login authentication through Firebase,
-                ensuring secure access for users. With Firebase as the database,
-                users can easily log in, list their to-dos, and efficiently
-                manage tasks. The app allows users to add, review, and delete
-                tasks, offering a streamlined experience for organizing
-                reminders.
-              </p>
-              <div className="tech-stack">
-                <h3>Tech Stack - </h3>
-                <div>
-                  <img src={NextJSLogo} alt="nextjs-logo" />
-                  <img src={FirebaseLogo} alt="firebase-logo" />
-                </div>
-              </div>
-              <div className="social-links">
-                <a
-                  href="https://github.com/Nayana62/reminder__app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Code
-                  <span>
-                    <BsGithub />
-                  </span>
-                </a>
-                <a
-                  href="https://reminder-app-omega.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Preview
-                  <span className="arroup">
-                    <BsBoxArrowUpRight />
-                  </span>
-                </a>
-              </div>
-            </div>
-            <img src={ReminderApp} alt="" />
           </div>
         </div>
       </div>

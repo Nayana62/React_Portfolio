@@ -25,7 +25,7 @@ const Home = () => {
               My work
             </Link>
             <a
-              href="https://drive.google.com/file/d/1oh0n2-kxuvdbbMxw32tKQia-1aXVUvOY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DvyqQ3WIjf75ya00MrHkWmN0Zjv5u5H_/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="resumeBtn"
