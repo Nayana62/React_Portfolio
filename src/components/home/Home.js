@@ -25,7 +25,11 @@ const Home = () => {
               My work
             </Link>
             <a
+<<<<<<< HEAD
               href="https://drive.google.com/file/d/1DvyqQ3WIjf75ya00MrHkWmN0Zjv5u5H_/view?usp=sharing"
+=======
+              href="https://drive.google.com/file/d/1fHxNyo7WggJAeuNzQe0QOPCw0yK4VX3V/view?usp=sharing"
+>>>>>>> 8a024f3ae40b97a625633a6ef8dbdf5894a52fa0
               target="_blank"
               rel="noreferrer"
               className="resumeBtn"
