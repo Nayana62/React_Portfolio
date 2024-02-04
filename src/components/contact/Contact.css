@@ -3,6 +3,7 @@
   width: 100%;
   background-color: var(--background-color);
   padding-top: 80px;
+  padding: 0 30px;
 }
 
 .contact-container {
@@ -57,5 +58,8 @@ p {
   .contact {
     width: 90%;
     margin: auto;
+  }
+  .contact-form {
+    width: 100%;
   }
 }

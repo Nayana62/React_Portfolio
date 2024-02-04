@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 .homescreen-container {
   max-width: 1200px;
@@ -98,5 +99,17 @@
   }
   .profile > img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading p {
+    font-size: 1.2rem;
+  }
+  .heading p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .heading h1 {
+    font-size: 2rem;
   }
 }

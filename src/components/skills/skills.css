@@ -1,10 +1,11 @@
 .Skills {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
   padding-top: 80px;
   background-color: var(--background-color);
+  padding: 0 30px;
 }
 
 .skills-container {
@@ -85,5 +86,15 @@
     font-size: 18px;
     border-radius: 8px;
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills .containers li {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 140px;
+    font-size: 0.9rem;
   }
 }
