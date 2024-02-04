@@ -1,43 +1,21 @@
-import React from "react";
-import YoutubeClone from "../../assets/youtube_clone.png";
-import MovieSearchApp from "../../assets/Movie_search_app.png";
-import AmazonCloneApp from "../../assets/amazon_clone.png";
-import LinkedInCloneApp from "../../assets/LinkedIn_Clone.png";
-import ReactLogo from "../../assets/react.svg";
-import ReduxLogo from "../../assets/redux.png";
-import FirebaseLogo from "../../assets/firebase.png";
+import React, { useEffect } from "react";
 import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 import "./Portfolio.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="Projects">
       <div className="projects-container">
         <h1>Portfolio</h1>
         <div className="projects">
-          <div className="container">
-            <div className="details">
-              <h2>Youtube Clone</h2>
-              <p>
-                I successfully developed a YouTube Clone project featuring a
-                user interface mirroring YouTube for familiarity and a fully
-                responsive design compatible with all devices. To enhance user
-                experience, I implemented Shimmer UI and integrated infinite
-                scrolling for seamless navigation. The optimized search feature
-                provides live API suggestions, debouncing for API call
-                management, and caching using Redux Toolkit. The project also
-                includes an N-level comment system similar to Reddit, a live
-                chat feature with API polling, and controlled chat size to
-                prevent freezing. Developed using REACT, Tailwind CSS,
-                redux-toolkit, react-router-dom, and the YouTube API.
-              </p>
-              <div className="tech-stack">
-                <h3>Tech Stack - </h3>
-                <div>
-                  <img src={ReactLogo} alt="react-logo" />
-                  <img src={ReduxLogo} alt="redux-logo" />
-                </div>
-              </div>
+          <div data-aos="fade-up" className="container">
+            <div className="project-links" id="youtube">
               <div className="social-links">
                 <a
                   href="https://github.com/Nayana62/youtube_clone"
@@ -61,10 +39,28 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-            <img src={YoutubeClone} alt="" />
+            <div className="details">
+              <h2>Youtube Clone</h2>
+              <p>
+                YouTube Clone project featuring a user interface mirroring
+                YouTube for familiarity and a fully responsive design. To
+                enhance user experience, Implemented Shimmer UI and integrated
+                infinite scrolling for seamless navigation. The optimized search
+                feature provides live API suggestions, debouncing for API call
+                management, and caching using Redux Toolkit. The project also
+                includes an N-level comment system similar to Reddit, a live
+                chat feature with API polling, and controlled chat size to
+                prevent freezing.
+              </p>
+
+              <p>
+                <span>Tech Stack: </span>
+                React, Tailwind CSS, redux-toolkit, react-router-dom, and the
+                YouTube API
+              </p>
+            </div>
           </div>
-          <div className="container">
-            <img src={MovieSearchApp} alt="" />
+          <div data-aos="fade-up" className="container">
             <div className="details">
               <h2>Movie Search App</h2>
               <p>
@@ -76,13 +72,13 @@ const Portfolio = () => {
                 access additional details such as overview, release date, and
                 average rating.
               </p>
-              <div className="tech-stack">
-                <h3>Tech Stack - </h3>
-                <div>
-                  <img src={ReactLogo} alt="react-logo" />
-                  <img src={ReduxLogo} alt="redux-logo" />
-                </div>
-              </div>
+              <p>
+                <span>Tech Stack: </span>
+                React, Tailwind CSS, redux-toolkit, react-router-dom,
+                redux-persist
+              </p>
+            </div>
+            <div className="project-links" id="movie">
               <div className="social-links">
                 <a
                   href="https://github.com/Nayana62/Movie_Search_App"
@@ -107,24 +103,8 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className="container">
-            <div className="details">
-              <h2>Amazon Clone App</h2>
-              <p>
-                Check out the Amazon Clone app – it's like a copy of the Amazon
-                App but made with ReactJS and stunning UI using Tailwind CSS.
-                It's got simple login using Firebase and uses the Context API to
-                keep things organized. Plus, I have used the Fake Store API to
-                show all the cool products. You can add or remove items from
-                your basket and check what's inside.
-              </p>
-              <div className="tech-stack">
-                <h3>Tech Stack - </h3>
-                <div>
-                  <img src={ReactLogo} alt="react-logo" />
-                  <img src={FirebaseLogo} alt="firebase-logo" />
-                </div>
-              </div>
+          <div data-aos="fade-up" className="container">
+            <div className="project-links" id="amazon">
               <div className="social-links">
                 <a
                   href="https://github.com/Nayana62/amazon_clone"
@@ -148,10 +128,24 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-            <img src={AmazonCloneApp} alt="" />
+            <div className="details">
+              <h2>Amazon Clone App</h2>
+              <p>
+                Check out the Amazon Clone app – it's like a copy of the Amazon
+                App but made with ReactJS and stunning UI using Tailwind CSS.
+                It's got simple login using Firebase and uses the Context API to
+                keep things organized. Plus, I have used the Fake Store API to
+                show all the cool products. You can add or remove items from
+                your basket and check what's inside.
+              </p>
+              <p>
+                <span>Tech Stack: </span>
+                React, Tailwind CSS, react-router-dom, context-api,
+                fakestore-api, firebase, firebase-auth,
+              </p>
+            </div>
           </div>
-          <div className="container">
-            <img src={LinkedInCloneApp} alt="" />
+          <div data-aos="fade-up" className="container">
             <div className="details">
               <h2>LinkedIn Clone</h2>
               <p>
@@ -163,14 +157,12 @@ const Portfolio = () => {
                 view posts from others, fostering a professional and interactive
                 environment.
               </p>
-              <div className="tech-stack">
-                <h3>Tech Stack - </h3>
-                <div>
-                  <img src={ReactLogo} alt="react-logo" />
-                  <img src={ReduxLogo} alt="redux-logo" />
-                  <img src={FirebaseLogo} alt="firebase-logo" />
-                </div>
-              </div>
+              <p>
+                <span>Tech Stack: </span>
+                React, Redux, react-router-dom, Firebase
+              </p>
+            </div>
+            <div className="project-links" id="linkedIn">
               <div className="social-links">
                 <a
                   href="https://github.com/Nayana62/LinkedIn-Clone"

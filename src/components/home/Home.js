@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import profileImg from "../../assets/my_photo.jpg";
 import "./Home.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="homescreen">
-      <div className="homescreen-container">
+      <div data-aos="fade-up" className="homescreen-container">
         <div className="heading">
           <p>👋 Hi, I am Nayana N M.</p>
           <h1>Front-End Developer</h1>
@@ -25,7 +31,7 @@ const Home = () => {
               My work
             </Link>
             <a
-              href="https://drive.google.com/file/d/1DvyqQ3WIjf75ya00MrHkWmN0Zjv5u5H_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_qLFsnghoaO_AKq2VSLKDD6eIUfwJhbG/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="resumeBtn"

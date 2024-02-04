@@ -28,6 +28,10 @@ body {
   background-color: var(--background-color);
 }
 
+.border {
+  border: 2px solid red;
+}
+
 @media screen and (max-width: 900px) {
   html,
   body {

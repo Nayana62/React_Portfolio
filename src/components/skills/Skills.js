@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./skills.css";
 import html from "../../assets/html-1.svg";
 import css from "../../assets/css-3.svg";
@@ -9,13 +9,19 @@ import reduxLogo from "../../assets/redux.png";
 import firebaseLogo from "../../assets/firebase.png";
 import TailwindCss from "../../assets/tailwind-css-2.svg";
 import { BsGithub } from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="Skills">
       <div className="skills-container">
         <h1>My Skills.</h1>
-        <div className="skills">
+        <div data-aos="fade-up" className="skills">
           <div className="containers">
             <li>
               <img src={html} alt="html logo" /> Html

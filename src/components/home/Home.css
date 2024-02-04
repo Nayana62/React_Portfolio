@@ -1,6 +1,6 @@
 .homescreen {
   background-color: var(--background-color);
-  min-height: 90vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
 .heading > .contact-links {
   /* background-color: blue; */
   display: flex;
-  gap: 50px;
+  gap: 20px;
 
   /* justify-content: space-between; */
   align-items: center;
@@ -77,6 +77,11 @@
 }
 
 @media screen and (max-width: 900px) {
+  .homescreen {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+  }
   .homescreen-container {
     flex-direction: column-reverse;
     margin-top: 20px;
