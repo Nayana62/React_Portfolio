@@ -1,8 +1,9 @@
 .contact {
   min-height: 60vh;
   width: 100%;
+  display: flex;
+  /* align-items: center; */
   background-color: var(--background-color);
-  padding-top: 80px;
   padding: 0 30px;
 }
 
@@ -10,6 +11,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .contact-container > h1,
@@ -58,6 +60,7 @@ p {
   .contact {
     width: 90%;
     margin: auto;
+    padding: 0;
   }
   .contact-form {
     width: 100%;

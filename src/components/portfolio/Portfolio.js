@@ -11,10 +11,10 @@ const Portfolio = () => {
 
   return (
     <div className="Projects">
-      <div className="projects-container">
+      <div data-aos="fade-up" className="projects-container">
         <h1>Portfolio</h1>
         <div className="projects">
-          <div data-aos="fade-up" className="container">
+          <div className="container">
             <div className="project-links" id="youtube">
               <div className="social-links">
                 <a
@@ -60,7 +60,7 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div data-aos="fade-up" className="container">
+          <div className="container">
             <div className="details">
               <h2>Movie Search App</h2>
               <p>
@@ -103,7 +103,7 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" className="container">
+          <div className="container">
             <div className="project-links" id="amazon">
               <div className="social-links">
                 <a
@@ -145,7 +145,7 @@ const Portfolio = () => {
               </p>
             </div>
           </div>
-          <div data-aos="fade-up" className="container">
+          <div className="container">
             <div className="details">
               <h2>LinkedIn Clone</h2>
               <p>

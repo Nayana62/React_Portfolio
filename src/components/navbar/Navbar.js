@@ -112,7 +112,7 @@ const Navbar = () => {
                 >
                   <BsLinkedin size={24} />
                 </a>
-                <p
+                <div
                   onClick={toggleTheme}
                   style={{ cursor: "pointer" }}
                   className="desktopIcon"
@@ -120,12 +120,12 @@ const Navbar = () => {
                   {isDarkMode ? (
                     <HiSun size={24} />
                   ) : (
-                    <div>
+                    <p>
                       {" "}
                       <HiMoon size={24} />
-                    </div>
+                    </p>
                   )}
-                </p>
+                </div>
               </div>
               <div
                 className={isDarkMode ? "active mobile-icon" : "mobile-icon"}

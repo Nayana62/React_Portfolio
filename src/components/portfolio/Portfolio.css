@@ -1,8 +1,8 @@
 .Projects {
-  background-color: var(--background-color);
+  min-height: 80vh;
   width: 100%;
-  /* min-height: 80vh; */
-  padding-top: 80px;
+  display: flex;
+  background-color: var(--background-color);
   padding: 0 30px;
 }
 
@@ -10,6 +10,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .projects-container > h1 {
@@ -41,6 +42,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: transform 0.3s;
 }
 
 #youtube {
@@ -177,6 +179,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .Projects {
+    padding: 0;
+  }
   .projects-container > .projects > .container > .project-links {
     background-size: contain;
   }

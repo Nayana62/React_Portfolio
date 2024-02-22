@@ -1,9 +1,8 @@
 .Skills {
-  min-height: 90vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
-  align-items: center;
-  padding-top: 80px;
+  /* align-items: center; */
   background-color: var(--background-color);
   padding: 0 30px;
 }
@@ -12,6 +11,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 80px;
 }
 
 .skills-container > h1 {
@@ -90,6 +90,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .Skills {
+    padding: 0;
+  }
   .skills .containers li {
     display: flex;
     flex-direction: column;

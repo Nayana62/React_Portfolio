@@ -19,9 +19,9 @@ const Skills = () => {
 
   return (
     <div className="Skills">
-      <div className="skills-container">
+      <div data-aos="fade-up" className="skills-container">
         <h1>My Skills.</h1>
-        <div data-aos="fade-up" className="skills">
+        <div className="skills">
           <div className="containers">
             <li>
               <img src={html} alt="html logo" /> Html
