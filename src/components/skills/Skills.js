@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./skills.css";
 import html from "../../assets/html-1.svg";
 import css from "../../assets/css-3.svg";
@@ -8,18 +8,11 @@ import reactLogo from "../../assets/react-2.svg";
 import reduxLogo from "../../assets/redux.png";
 import firebaseLogo from "../../assets/firebase.png";
 import TailwindCss from "../../assets/tailwind-css-2.svg";
-import { BsGithub } from "react-icons/bs";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Skills = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="Skills">
-      <div data-aos="fade-up" className="skills-container">
+      <div className="skills-container">
         <h1>My Skills.</h1>
         <div className="skills">
           <div className="containers">
@@ -55,12 +48,12 @@ const Skills = () => {
             </li>
 
             <li>
-              <img src={reduxLogo} alt="javascript logo" /> Redux-toolkit
+              <img src={reduxLogo} alt="javascript logo" /> Redux
             </li>
-            <li>
+            {/* <li>
               <BsGithub className="github" />
               Git/Github
-            </li>
+            </li> */}
           </div>
         </div>
       </div>

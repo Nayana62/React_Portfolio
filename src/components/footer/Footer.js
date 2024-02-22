@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <p>
+        <p className="love">
           Made with <span>❤ </span> by Nayana
         </p>
         <div className="gotohome">

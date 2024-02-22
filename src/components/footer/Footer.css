@@ -4,10 +4,6 @@
   display: flex;
   align-items: center;
   padding: 0 30px;
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .form-container {
@@ -21,6 +17,10 @@
 .form-container p {
   /* padding-top: 50px; */
   color: #fff;
+}
+
+.love {
+  margin-left: -100px;
 }
 
 .form-container p span {
@@ -51,12 +51,22 @@
 .icons a {
   text-decoration: none;
   color: #fff;
+  transition: transform 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.1);
 }
 
 .gotohome a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gotohome a:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -70,5 +80,8 @@
   }
   .gotohome {
     display: none;
+  }
+  .love {
+    margin-left: 0;
   }
 }

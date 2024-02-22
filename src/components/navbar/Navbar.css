@@ -74,9 +74,11 @@
   transition: all 0.3s ease;
   font-weight: 600;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 .navbar > .links > .navbar-links > .a:hover {
   background-color: var(--navbar-links-hover);
+  transform: scale(1.1);
 }
 .navbar > .links > .navbar-links > .a:focus {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -91,7 +93,13 @@
 .social-link p {
   text-decoration: none;
   color: var(--navbar-links);
+  transition: transform 0.3s;
 }
+.social-link a:hover,
+.social-link p:hover {
+  transform: scale(1.1);
+}
+
 .menu {
   display: none;
 }

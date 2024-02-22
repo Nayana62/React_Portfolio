@@ -1,5 +1,5 @@
 .Skills {
-  min-height: 80vh;
+  min-height: 60vh;
   width: 100%;
   display: flex;
   /* align-items: center; */
@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: 140px;
+    width: 120px;
     font-size: 0.9rem;
   }
 }

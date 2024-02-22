@@ -1,18 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Contact.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Contact = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="contact">
-      <div data-aos="fade-up" className="contact-container">
+      <div className="contact-container">
         <h1>Contact me.</h1>
-        <p>Submit the form below or shoot me an email - nmnayana62@gmail.com</p>
+        <p>Submit the form or shoot me an email - nmnayana62@gmail.com</p>
         <form
           className="contact-form"
           method="POST"

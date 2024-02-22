@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 import "./Portfolio.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Portfolio = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   return (
     <div className="Projects">
-      <div data-aos="fade-up" className="projects-container">
+      <div className="projects-container">
         <h1>Portfolio</h1>
         <div className="projects">
           <div className="container">

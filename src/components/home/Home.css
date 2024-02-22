@@ -53,6 +53,7 @@
   color: var(--button-color);
   cursor: pointer;
   border-radius: 8px;
+  transition: transform 0.3s;
 }
 .heading > .contact-links .contactbtn {
   background-color: var(--button-color);
@@ -63,6 +64,12 @@
   color: var(--button-text-color);
   cursor: pointer;
   border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.heading > .contact-links .resumeBtn:hover,
+.heading > .contact-links .contactbtn:hover {
+  transform: scale(1.1);
 }
 .profile {
   flex: 2;
