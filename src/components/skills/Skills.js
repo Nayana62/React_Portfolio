@@ -3,8 +3,10 @@ import "./skills.css";
 import html from "../../assets/html-1.svg";
 import css from "../../assets/css-3.svg";
 import javascript from "../../assets/logo-javascript.svg";
+import typescript from "../../assets/ts-logo-256.svg";
 import material from "../../assets/material-ui-1.svg";
 import reactLogo from "../../assets/react-2.svg";
+import nextjs from "../../assets/NextJsCircle.png";
 import reduxLogo from "../../assets/redux.png";
 import firebaseLogo from "../../assets/firebase.png";
 import TailwindCss from "../../assets/tailwind-css-2.svg";
@@ -27,15 +29,22 @@ const Skills = () => {
             <li>
               <img src={javascript} alt="javascript logo" /> Javascript
             </li>
+            <li>
+              <img src={typescript} alt="javascript logo" /> Typescript
+            </li>
 
             <li>
               <img src={reactLogo} alt="react logo" />
-              React
+              ReactJS
+            </li>
+            <li>
+              <img src={nextjs} alt="react logo" />
+              NextJS
             </li>
 
             <li>
               <img src={TailwindCss} alt="Tailwind logo" />
-              Tailwind
+              Tailwind CSS
             </li>
             <li>
               <img src={material} alt="material logo" />
